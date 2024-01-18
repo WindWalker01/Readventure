@@ -3,12 +3,13 @@
  */
 
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
 public class Hangman {
 
-    private Scanner scanner;
+    private Scanner scanner = new Scanner(System.in);
 
     private  App appState;
 
@@ -20,6 +21,8 @@ public class Hangman {
     private int correctGuesses = 0;
 
     private boolean didWin = false;
+
+    char input;
 
     String[] asciiString = {
             "  +---+\r\n" + //
@@ -95,8 +98,7 @@ public class Hangman {
 
     ArrayList<Character> usedLetters = new ArrayList<>();
 
-    public Hangman(Scanner _scanner, Random _random, App _app) {
-        scanner = _scanner;
+    public Hangman(Random _random, App _app) {
         appState = _app;
 
         // randomised int for selecting what kind/type of word to choose
@@ -159,23 +161,30 @@ public class Hangman {
                 System.out.println("\n\nhint: " + hint);
             }
 
-            System.out.print("\nPick A letter: ");
-            char response = scanner.next().charAt(0); // get the user response
+            try{
+
+                System.out.print("\nPick A letter: ");
+                input = scanner.next().charAt(0); // get the user response
+            }catch (InputMismatchException e){
+                System.out.println("Invalid Input");
+                input = ' ';
+                continue;
+            }
 
             // Makes the user's response and the hidden word all lowercase so that
             // no matter what casing the user inputted, it will always be the same and
             // consistent.
-            response = Character.toLowerCase(response);
+            input = Character.toLowerCase(input);
             hiddenWord = hiddenWord.toLowerCase();
 
 
             // Check if the user's response is in the List of characters in the hidden word
             // else if the response is wrong then add 1 to the attempt
-            if (hiddenWord.contains(response + "")) {
+            if (hiddenWord.contains(input + "")) {
 
                 //If the user's response is already in the usedLetter array
                 // then we are going to skip to the next iteration
-                if(usedLetters.contains(response)){
+                if(usedLetters.contains(input)){
 
                     //Tell to the user that the current response this iteration is already been inputted.
                     System.err.println("\nThat letter is already answered.\n");
@@ -191,7 +200,7 @@ public class Hangman {
             }
 
             // Add the user's response to an array.
-            usedLetters.add(response);
+            usedLetters.add(input);
 
             //Checks how many correct guessed we got
             for (int i = 0; i < hiddenWord.length(); i++) {

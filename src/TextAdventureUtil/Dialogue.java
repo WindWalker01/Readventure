@@ -8,6 +8,7 @@ public class Dialogue {
     public String text;
 
     public int responseType;
+    public int ID;
     public List<Response> response = new ArrayList<>();
 
     public Dialogue(String _text, int _responseType){

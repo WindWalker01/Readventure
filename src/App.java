@@ -69,15 +69,15 @@ public class App {
         switch (currentState) {
             case Adventure:
                 // Todo: ajsdiwiqjdmaskciwjdmqwkdniwqhjeiqwei
-                EnchantedForest adventure = new EnchantedForest(scanner, this);
+                EnchantedForest adventure = new EnchantedForest(this);
                 adventure.Play();
                 break;
             case FunFact:
-                Fact funFact = new Fact(scanner, random, this);
+                Fact funFact = new Fact(random, this);
                 funFact.Play();
                 break;
             case Hangman:
-                Hangman hangman = new Hangman(scanner, random, this);
+                Hangman hangman = new Hangman(random, this);
                 hangman.Play();
                 break;
             case Menu:

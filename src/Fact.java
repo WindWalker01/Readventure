@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Fact {
 
-    Scanner scanner;
+    Scanner scanner = new Scanner(System.in);
     App state;
     Random random;
 
@@ -41,8 +41,7 @@ public class Fact {
             "The \"sixth sick sheik's sixth sheep's sick\" is one of the toughest tongue twisters in the English language.",
     };
 
-    public Fact(Scanner _scanner, Random _random, App _app) {
-        scanner = _scanner;
+    public Fact(Random _random, App _app) {
         state = _app;
         random = _random;
     }
