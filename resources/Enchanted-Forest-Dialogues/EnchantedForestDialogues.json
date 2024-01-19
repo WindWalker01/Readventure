@@ -1,0 +1,633 @@
+{
+  "Dialogues":
+  [
+    {
+      "Text": "Once upon a time, in a small village surrounded by towering mountains and dense forests, there lived a curious and brave child. One day, while exploring the outskirts of the village, you stumbled upon a hidden path that led deep into the heart of the enchanted forest.",
+      "DialogueType": 0,
+      "Address": 1,
+      "responses":
+      [
+        {
+          "Text": "Enter any number to continue: ",
+          "DialoguePointerAddress": 2
+        }
+      ]
+    },
+    {
+      "Text": "As you ventured further, the trees seemed to whisper secrets, and colorful butterflies danced around. Suddenly, a wise old owl named Oliver appeared on a branch, hooting a friendly greeting.",
+      "DialogueType": 0,
+      "Address": 2,
+      "responses":
+      [
+        {
+          "Text": "Enter any number to continue: ",
+          "DialoguePointerAddress": 3
+        }
+      ]
+    },
+    {
+      "Text": "\"Hello, young adventurer! Welcome to the Magical Forest,\" said Oliver.\"I sense you are on a quest. Are you ready to embark on a magical journey?\"",
+      "DialogueType": 1,
+      "Address": 3,
+      "responses":
+      [
+        {
+          "Text": "You bet I am!",
+          "DialoguePointerAddress": 9
+        },
+        {
+          "Text": "No, that's boring.",
+          "DialoguePointerAddress": 4
+        }
+      ]
+    },
+    {
+      "Text": "Hmm. That is understandable young adventurer.",
+      "DialogueType": 0,
+      "Address": 4,
+      "responses":
+      [
+        {
+          "Text": "Enter any number to continue",
+          "DialoguePointerAddress": 5
+        }
+      ]
+    },
+    {
+      "Text": "But best be cautious. The magical forest can be unpredictable, and you may encounter challenges on your own. If you change your mind, I'll be here to guide you.",
+      "DialogueType": 0,
+      "Address": 5,
+      "responses":
+      [
+        {
+          "Text": "Enter any number to continue: ",
+          "DialoguePointerAddress": 6
+        }
+      ]
+    },
+    {
+      "Text": "As you walked away from the enchanted path, the forest remained quiet, and the magical creatures kept to themselves. The village beckoned in the distance, and you returned home, leaving the mysteries of the Magical Forest undiscovered.",
+      "DialogueType": 0,
+      "Address": 6,
+      "responses":
+      [
+        {
+          "Text": "Enter any number to continue: ",
+          "DialoguePointerAddress": 7
+        }
+      ]
+    },
+    {
+      "Text": "The end of this tale would focus on the importance of bravery, curiosity, and the choices we make, even if they lead us back to familiar paths. It would also leave open the possibility for another day when you might decide to embark on the magical adventure with Oliver's guidance....",
+      "DialogueType": 0,
+      "Address": 7,
+      "responses":
+      [
+        {
+          "Text": "Enter any number to continue: ",
+          "DialoguePointerAddress": 8
+        }
+      ]
+    },
+    {
+      "Text": "The End",
+      "DialogueType": -1,
+      "Address": 8,
+      "responses":
+      [
+        {
+          "Text": "Press Enter to continue: ",
+          "DialoguePointerAddress": 0
+        }
+      ]
+    },
+    {
+      "Text": "Excited, you nodded and Oliver continued.",
+      "DialogueType": 0,
+      "Address": 9,
+      "responses":
+      [
+        {
+          "Text": "Press Enter any number to continue: ",
+          "DialoguePointerAddress": 10
+        }
+      ]
+    },
+    {
+      "Text": "To find the hidden treasure of the forest, you must make important choices. Each choice will take you to a different part of the magical realm.\"",
+      "DialogueType": 1,
+      "Address": 10,
+      "responses":
+      [
+        {
+          "Text": "Go to the Sparkling Pond",
+          "DialoguePointerAddress": 16
+        },
+        {
+          "Text": "Go to the Whispering Grove",
+          "DialoguePointerAddress": 11
+        }
+      ]
+    },
+    {
+      "Text": "As you approached the whispering grove, you met a big talking tree. The tree smiles at you and challenged you to a riddle game. If you solved the riddle, then the tree promised to reveal the way to the next part of the forest!",
+      "DialogueType": 0,
+      "Address": 11,
+      "responses":
+      [
+        {
+          "Text": "Enter any number to continue: ",
+          "DialoguePointerAddress": 12
+        }
+      ]
+    },
+    {
+      "Text": "I have lungs, but I never breathe, I have a beard, but I never shave. I wear a crown, but I am no king, And whispers fill my ears, though I have no string.",
+      "DialogueType": 1,
+      "Address": 12,
+      "responses":
+      [
+        {
+          "Text": "Ground",
+          "DialoguePointerAddress": 13
+        },
+        {
+          "Text": "Forest",
+          "DialoguePointerAddress": 13
+        },
+        {
+          "Text": "Tree",
+          "DialoguePointerAddress": 14
+        }
+      ]
+    },
+    {
+      "Text": "The tree laughs at you. \"That's wrong!\" it says and offers you to try to guess again.",
+      "DialogueType": 0,
+      "Address": 13,
+      "responses":
+      [
+        {
+          "Text": "Enter any number to continue: ",
+          "DialoguePointerAddress": 12
+        }
+      ]
+    },
+    {
+      "Text": "\"hehehe, that is correct! your smarter than you looks aren't cha. I will bestow this gift to you my friend. May this help for your journey\" ",
+      "DialogueType": 0,
+      "Address": 14,
+      "responses":
+      [
+        {
+          "Text": "Enter any number to continue: ",
+          "DialoguePointerAddress": 15
+        }
+      ]
+    },
+    {
+      "Text": "The big talking tree gives you a gift and offers you to take two different routes to find the hidden treasure.",
+      "DialogueType": 1,
+      "Address": 15,
+      "responses":
+      [
+        {
+          "Text": "Climb the Rainbow Tree",
+          "DialoguePointerAddress": 32
+        },
+        {
+          "Text": "Enter the Mysterious Cave",
+          "DialoguePointerAddress": 21
+        }
+      ]
+    },
+    {
+      "Text": "As you approached the Sparkling Pond, a mischievous water sprite appeared. The sprite giggled and challenged Alex to a riddle game. If Alex solved the riddles, the sprite promised to reveal the way to the next part of the forest!",
+      "DialogueType": 0,
+      "Address": 16,
+      "responses":
+      [
+        {
+          "Text": "Enter any number to continue: ",
+          "DialoguePointerAddress": 17
+        }
+      ]
+    },
+    {
+      "Text": "I fall from the sky, but I haven't wings. I kiss the earth, but I hold no sting. What am I?",
+      "DialogueType": 1,
+      "Address": 17,
+      "responses":
+      [
+        {
+          "Text": "Water",
+          "DialoguePointerAddress": 18
+        },
+        {
+          "Text": "Rain",
+          "DialoguePointerAddress": 19
+        },
+        {
+          "Text": "Clouds",
+          "DialoguePointerAddress": 18
+        }
+      ]
+    },
+    {
+      "Text": "The water sprite laughs at you. \"That's wrong!\" it says and offers you to try to guess again.",
+      "DialogueType": 0,
+      "Address": 18,
+      "responses":
+      [
+        {
+          "Text": "Enter any number to continue: ",
+          "DialoguePointerAddress": 17
+        }
+      ]
+    },
+    {
+      "Text": "\"hehehe, that is correct! your smarter than you looks aren't cha\"",
+      "DialogueType": 0,
+      "Address": 19,
+      "responses":
+      [
+        {
+          "Text": "Press any number to continue: ",
+          "DialoguePointerAddress": 20
+        }
+      ]
+    },
+    {
+      "Text": "The Water sprites offers you to take two different routes to find the hidden treasure.",
+      "DialogueType": 1,
+      "Address": 20,
+      "responses":
+      [
+        {
+          "Text": "Enter the Mysterious Cave",
+          "DialoguePointerAddress": 21
+        },
+        {
+          "Text": "Climb the Rainbow Tree",
+          "DialoguePointerAddress": 32
+        }
+      ]
+    },
+    {
+      "Text": "As you entered the cave, You faced a gigantic spider. It appears that it wants to eat you...",
+      "DialogueType": 0,
+      "Address": 21,
+      "responses":
+      [
+        {
+          "Text": "Press any number to continue: ",
+          "DialoguePointerAddress": 22
+        }
+      ]
+    },
+    {
+      "Text": "\"food.. food. foood\". It appears to say. What should you do?",
+      "DialogueType": 1,
+      "Address": 22,
+      "responses":
+      [
+        {
+          "Text": "Look For weapon",
+          "DialoguePointerAddress": 23
+        }
+      ]
+    },
+    {
+      "Text": "You quickly look for a weapon and you saw a bag that contains a totem, an axe, and a bow. You went to the bag and choose a weapon to defeat the monster.",
+      "DialogueType": 1,
+      "Address": 23,
+      "responses":
+      [
+        {
+          "Text": "Totem",
+          "DialoguePointerAddress": 24
+        },
+        {
+          "Text": "Axe",
+          "DialoguePointerAddress": 25
+        },
+        {
+          "Text": "Bow",
+          "DialoguePointerAddress": 26
+        }
+      ]
+    },
+    {
+      "Text": "The totem seems have no effect to the giant spider. You don't even know what it does... What should you do?",
+      "DialogueType": 1,
+      "Address": 24,
+      "responses":
+      [
+        {
+          "Text": "Look for another weapon",
+          "DialoguePointerAddress": 23
+        },
+        {
+          "Text": "Run Away",
+          "DialoguePointerAddress": 27
+        }
+      ]
+    },
+    {
+      "Text": "No matter what slash you did  to the spider it just regenerates at an instant... What should you do?",
+      "DialogueType": 0,
+      "Address": 25,
+      "responses":
+      [
+        {
+          "Text": "Look for another weapon",
+          "DialoguePointerAddress": 23
+        },
+        {
+          "Text": "Run Away",
+          "DialoguePointerAddress": 27
+        }
+      ]
+    },
+    {
+      "Text": "Wait... where's the arrows though? What should you do?",
+      "DialogueType": 0,
+      "Address": 26,
+      "responses":
+      [
+        {
+          "Text": "Look for another weapon",
+          "DialoguePointerAddress": 23
+        },
+        {
+          "Text": "Run Away",
+          "DialoguePointerAddress": 27
+        }
+      ]
+    },
+    {
+      "Text": "You successfully escaped and as you run away, it lead you deeper into the heart of the cave. The shadows grow darker, and you realize the cave itself is a trap. Suddenly, you find yourself surrounded by mischievous spirits. They play tricks on you, creating illusions and leading you astray. Eventually, you manage to break free, but the forest becomes a maze, and you struggle to find your way back.",
+      "DialogueType": 0,
+      "Address": 27,
+      "responses":
+      [
+        {
+          "Text": "Enter any number to continue: ",
+          "DialoguePointerAddress": 28
+        }
+      ]
+    },
+    {
+      "Text": " Unable to find your way back, you become lost in the mysterious shadows, and your fate remains unknown. Unfortunately, you have become lost in the dark corners of the enchanted forest.",
+      "DialogueType": 0,
+      "Address": 28,
+      "responses":
+      [
+        {
+          "Text": "Enter any number to continue: ",
+          "DialoguePointerAddress": 8
+        }
+      ]
+    },
+    {
+      "Text": "The spider seems confused to what you says. I think it had a existential crisis and run away...",
+      "DialogueType": 1,
+      "Address": 29,
+      "responses":
+      [
+        {
+          "Text": "That's weird...",
+          "DialoguePointerAddress": 30
+        },
+        {
+          "Text": "What just happened?",
+          "DialoguePointerAddress": 30
+        }
+      ]
+    },
+    {
+      "Text": "You continue down the path you chose, and at the other end of the cave the air becomes charged with a playful energy. Suddenly, you stumble upon a hidden clearing where mischievous and enchanting creatures, the Fey, are celebrating. They invite you to join their revelry, dancing and singing under the moonlit sky.",
+      "DialogueType": 0,
+      "Address": 30,
+      "responses":
+      [
+        {
+          "Text": "Enter any number to continue: ",
+          "DialoguePointerAddress": 1
+        }
+      ]
+    },
+    {
+      "Text": "As the night unfolds, the Fey gift you with a magical token that allows you to visit their realm whenever you desire. You become a rare friend to the Fey, and your life is forever touched by the whimsy and magic of their secret gatherings.",
+      "DialogueType": 0,
+      "Address": 31,
+      "responses":
+      [
+        {
+          "Text": "Enter any number to continue: ",
+          "DialoguePointerAddress": 8
+        }
+      ]
+    },
+    {
+      "Text": "As you climbed the tree, You met a giant owl. It seems like you startled its fledglings...",
+      "DialogueType": 0,
+      "Address": 32,
+      "responses":
+      [
+        {
+          "Text": "Enter any number to continue: ",
+          "DialoguePointerAddress": 33
+        }
+      ]
+    },
+    {
+      "Text": "The mother Owl are now angry at you... What should you do?",
+      "DialogueType": 1,
+      "Address": 33,
+      "responses":
+      [
+        {
+          "Text": "Apologize to the owl",
+          "DialoguePointerAddress": 34
+        },
+        {
+          "Text": "Fight the owl",
+          "DialoguePointerAddress": 41
+        }
+      ]
+    },
+    {
+      "Text": "The owl did not understand you...",
+      "DialogueType": 0,
+      "Address": 34,
+      "responses":
+      [
+        {
+          "Text": "Enter any number to continue: ",
+          "DialoguePointerAddress": 35
+        }
+      ]
+    },
+    {
+      "Text": "The giant owl flaps it's wings and generates a powerful wind enough to make you fall all the way down of the Rainbow tree. What should you do?",
+      "DialogueType": 1,
+      "Address": 35,
+      "responses":
+      [
+        {
+          "Text": "Climb back up",
+          "DialoguePointerAddress": 36
+        },
+        {
+          "Text": "Enter the Mysterious Cave",
+          "DialoguePointerAddress": 21
+        }
+      ]
+    },
+    {
+      "Text": "You climbed back up again to the Rainbow tree and faced again the giant owl. You saw at the other side of the tree and It seems to be a Portal to another realm. What should you do?",
+      "DialogueType": 1,
+      "Address": 36,
+      "responses":
+      [
+        {
+          "Text": "Give the owl the gift that the talking tree gave you",
+          "DialoguePointerAddress": 37
+        },
+        {
+          "Text": "Fight the owl to enter the portal",
+          "DialoguePointerAddress": 41
+        }
+      ]
+    },
+    {
+      "Text": "The owl appreciates your gift and allows you to enter the portal.",
+      "DialogueType": 0,
+      "Address": 37,
+      "responses":
+      [
+        {
+          "Text": "Enter any number to continue: ",
+          "DialoguePointerAddress": 38
+        }
+      ]
+    },
+    {
+      "Text": "On the other side, you find yourself in a realm of wonder and adventure, leaving the enchanted forest behind. You've discovered a portal to another realm! Your journey continues beyond the enchanted forest...",
+      "DialogueType": 0,
+      "Address": 38,
+      "responses":
+      [
+        {
+          "Text": "Press enter to continue: ",
+          "DialoguePointerAddress": 39
+        }
+      ]
+    },
+    {
+      "Text": "To be continue...",
+      "DialogueType": -1,
+      "Address": 39,
+      "responses":
+      [
+        {
+          "Text": "Press enter to continue",
+          "DialoguePointerAddress": 0
+        }
+      ]
+    },
+    {
+      "Text": "The owl summons powerful winds enough to generate a tornado. What should you do?",
+      "DialogueType": 1,
+      "Address": 40,
+      "responses":
+      [
+        {
+          "Text": "Take its fledgling hostage",
+          "DialoguePointerAddress": 41
+        },
+        {
+          "Text": "Use the gift given to you by talking tree",
+          "DialoguePointerAddress": 44
+        }
+      ]
+    },
+    {
+      "Text": "The fledgling away before you catch them. The giant owl's anger further increases. What should you do?",
+      "DialogueType": 1,
+      "Address": 41,
+      "responses":
+      [
+        {
+          "Text": "Run Away",
+          "DialoguePointerAddress": 42
+        },
+        {
+          "Text": "Use the gift given to you by the talking tree",
+          "DialoguePointerAddress": 44
+        }
+      ]
+    },
+    {
+      "Text": "You successfully escaped and as you run away, it lead you deeper into the forest. The shadows grow darker, and you realize the forest itself is a trap. Suddenly, you find yourself surrounded by mischievous spirits. They play tricks on you, creating illusions and leading you astray. Eventually, you manage to break free, but the forest becomes a maze, and you struggle to find your way back.",
+      "DialogueType": 0,
+      "Address": 42,
+      "responses":
+      [
+        {
+          "Text": "Enter any number to continue: ",
+          "DialoguePointerAddress": 43
+        }
+      ]
+    },
+    {
+      "Text": " Unable to find your way back, you become lost in the mysterious shadows, and your fate remains unknown. Unfortunately, you have become lost in the dark corners of the enchanted forest.",
+      "DialogueType": 0,
+      "Address": 43,
+      "responses":
+      [
+        {
+          "Text": "Enter any number to continue: ",
+          "DialoguePointerAddress": 8
+        }
+      ]
+    },
+    {
+      "Text": "You threw the gift given by the tree directly to the owl. You realized that the gift is a seal and sealed the owl into nothingness...",
+      "DialogueType": 0,
+      "Address": 44,
+      "responses":
+      [
+        {
+          "Text": "Enter any number to continue: ",
+          "DialoguePointerAddress": 45
+        }
+      ]
+    },
+    {
+      "Text": "The fledglings cried. but you know it had to be done.",
+      "DialogueType": 0,
+      "Address": 45,
+      "responses":
+      [
+        {
+          "Text": "Enter any number to continue: ",
+          "DialoguePointerAddress": 46
+        }
+      ]
+    },
+    {
+      "Text": "As you enter the portal, you find yourself in a realm of wonder and adventure, leaving the enchanted forest behind. You've discovered a portal to another realm! Your journey continues beyond the enchanted forest...",
+      "DialogueType": 0,
+      "Address": 46,
+      "responses":
+      [
+        {
+          "Text": "Enter any number to continue: ",
+          "DialoguePointerAddress": 39
+        }
+      ]
+    }
+  ]
+}

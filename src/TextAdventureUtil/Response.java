@@ -3,14 +3,13 @@ package TextAdventureUtil;
 public class Response {
 
     public String text;
-    public Dialogue nextDialougePointer;
-
-    public int ID;
+    public int nextDialoguePointer;
 
 
-    public Response(String _text, Dialogue _nextDialogue){
+
+    public Response(String _text, int _nextDialogue){
         text = _text;
-        nextDialougePointer = _nextDialogue;
+        nextDialoguePointer = _nextDialogue;
     }
 
 }

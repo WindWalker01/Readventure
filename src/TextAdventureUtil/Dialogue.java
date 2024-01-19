@@ -7,15 +7,15 @@ public class Dialogue {
 
     public String text;
 
-    public int responseType;
-    public int ID;
+    public int dialogueType;
+    public int address;
     public List<Response> response = new ArrayList<>();
 
-    public Dialogue(String _text, int _responseType){
+    public Dialogue(String _text, int _dialogueType, int _address){
 
         text = _text;
-
-        responseType = _responseType;
+        dialogueType = _dialogueType;
+        address = _address;
     }
 
 }
