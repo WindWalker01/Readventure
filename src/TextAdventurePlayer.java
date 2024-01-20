@@ -59,7 +59,7 @@ public class TextAdventurePlayer {
 				}else{
 					
 					// if the current dialogue has a response then print it with numbering.
-					System.out.println((i + 1) + " : " + currentDialogue.response.get(i).text);
+					System.out.println("[" +(i + 1) + "] " + currentDialogue.response.get(i).text);
 				}
 		    }
 			

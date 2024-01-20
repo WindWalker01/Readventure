@@ -26,9 +26,9 @@ public class App {
                         "\t\t\t                                                                            ");
         System.out.println("Welcome to Readventure!\n");
         System.out.println("\tWhat should we do today?");
-        System.out.println("\t1. The Enchanted Forest (A Text Adventure Game).");
-        System.out.println("\t2. Play hangman!");
-        System.out.println("\t3. Fun fact!");
+        System.out.println("\t[1] The Enchanted Forest (A Text Adventure Game).");
+        System.out.println("\t[2] Play hangman!");
+        System.out.println("\t[3] Fun fact!");
 
         System.out.println("\n\t4. Exit\n");
 

@@ -14,7 +14,7 @@ public class Fact {
     App state;
     Random random;
     
-    private int response = 1;
+    private int response;
 
     // Store all the fun facts in an array so that I can pick it in random
     String[] funFacts = {
@@ -57,13 +57,14 @@ public class Fact {
 
     public void Play() {
         
+        response = 1;
         // if the user wants another one then the response is going to be 1. It will loop
         // until the user enters a number that is not equal to one.
         while (response == 1) {
             GetFunFact();
         }
 
-        
+        state.currentState = AppState.Menu;
     }
 
     private void GetFunFact() {
@@ -73,8 +74,8 @@ public class Fact {
 
         // Prompt the user if the user wants another fun fact
         System.out.println("\nWant to hear more?");
-        System.out.println("1. Yes");
-        System.out.println("2. No (Go back to the menu screen)");
+        System.out.println("[1] Yes");
+        System.out.println("[2] No (Go back to the menu screen)");
 
         System.out.print("\nEnter a number: ");
         
@@ -86,7 +87,7 @@ public class Fact {
             //If the user did not input a number then we are going to change the application state to the main menu.
             System.err.println("Crashed: Please enter a number.");
             System.err.println("Going back to the main menu...");
-            state.currentState = AppState.Menu;
+            response = 0;
         }
 
     }
