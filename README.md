@@ -1,7 +1,7 @@
 # Readventure Text Adventure App - Computer Programming 1 Final Requirement
 
-## Project Details
-- **Name:** Mendoza Ruzzel P.
+## In Partial Fulfillment Of the Course Requirements by
+- **Name:** Mendoza, Ruzzel P.
 - **Section:** BSCS ND1D
 
 ## Prerequisites
