@@ -125,7 +125,6 @@ public class Hangman {
     }
 
     public void Play() {
-        System.out.println(hiddenWord);
         System.out.println("Guess the word before the prisoner get hung!");
 
 
@@ -174,18 +173,17 @@ public class Hangman {
             input = Character.toLowerCase(input);
             hiddenWord = hiddenWord.toLowerCase();
 
-
+            //If the user's response is already in the usedLetter array
+            // then we are going to skip to the next iteration
+            if(usedLetters.contains(input)){
+                
+                //Tell to the user that the current response this iteration is already been inputted.
+                System.err.println("\nThat letter is already answered.\n");
+                continue;
+            }
+            
             // Check if the user's response is in the List of characters in the hidden word
             if (hiddenWord.contains(input + "")) {
-
-                //If the user's response is already in the usedLetter array
-                // then we are going to skip to the next iteration
-                if(usedLetters.contains(input)){
-
-                    //Tell to the user that the current response this iteration is already been inputted.
-                    System.err.println("\nThat letter is already answered.\n");
-                    continue;
-                }
 
                 System.out.println("\nCorrect!");
 
@@ -228,7 +226,7 @@ public class Hangman {
         }
 
         // This checks if we guessed the hidden word
-        if (!didWin) {
+        if (didWin) {
             // If the number of correct guesses is the same as the number of characters in
             // the hidden word then that means the user successfully guessed the hidden word.
             System.out.println("Congratulations! You guessed the word: " + hiddenWord + "!");
