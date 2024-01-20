@@ -103,10 +103,5 @@ public class App {
 
         scanner.close();
     }
-    
-    
-    private void SetState() {
-    
-    }
 
 }
