@@ -8,7 +8,7 @@
       "responses":
       [
         {
-          "Text": "Enter any number to continue: ",
+          "Text": "\n",
           "DialoguePointerAddress": 2
         }
       ]
@@ -20,7 +20,7 @@
       "responses":
       [
         {
-          "Text": "Enter any number to continue: ",
+          "Text": "\n",
           "DialoguePointerAddress": 3
         }
       ]
@@ -48,7 +48,7 @@
       "responses":
       [
         {
-          "Text": "Enter any number to continue",
+          "Text": "\n",
           "DialoguePointerAddress": 5
         }
       ]
@@ -60,7 +60,7 @@
       "responses":
       [
         {
-          "Text": "Enter any number to continue: ",
+          "Text": "\n",
           "DialoguePointerAddress": 6
         }
       ]
@@ -72,7 +72,7 @@
       "responses":
       [
         {
-          "Text": "Enter any number to continue: ",
+          "Text": "\n",
           "DialoguePointerAddress": 7
         }
       ]
@@ -84,7 +84,7 @@
       "responses":
       [
         {
-          "Text": "Enter any number to continue: ",
+          "Text": "\n",
           "DialoguePointerAddress": 8
         }
       ]
@@ -96,7 +96,7 @@
       "responses":
       [
         {
-          "Text": "Press Enter to continue: ",
+          "Text": "\n",
           "DialoguePointerAddress": 0
         }
       ]
@@ -108,7 +108,7 @@
       "responses":
       [
         {
-          "Text": "Press Enter any number to continue: ",
+          "Text": "\n",
           "DialoguePointerAddress": 10
         }
       ]
@@ -136,7 +136,7 @@
       "responses":
       [
         {
-          "Text": "Enter any number to continue: ",
+          "Text": "\n",
           "DialoguePointerAddress": 12
         }
       ]
@@ -168,7 +168,7 @@
       "responses":
       [
         {
-          "Text": "Enter any number to continue: ",
+          "Text": "\n",
           "DialoguePointerAddress": 12
         }
       ]
@@ -180,7 +180,7 @@
       "responses":
       [
         {
-          "Text": "Enter any number to continue: ",
+          "Text": "\n",
           "DialoguePointerAddress": 15
         }
       ]
@@ -208,7 +208,7 @@
       "responses":
       [
         {
-          "Text": "Enter any number to continue: ",
+          "Text": "\n",
           "DialoguePointerAddress": 17
         }
       ]
@@ -240,7 +240,7 @@
       "responses":
       [
         {
-          "Text": "Enter any number to continue: ",
+          "Text": "\n",
           "DialoguePointerAddress": 17
         }
       ]
@@ -252,7 +252,7 @@
       "responses":
       [
         {
-          "Text": "Press any number to continue: ",
+          "Text": "\n",
           "DialoguePointerAddress": 20
         }
       ]
@@ -280,7 +280,7 @@
       "responses":
       [
         {
-          "Text": "Press any number to continue: ",
+          "Text": "\n",
           "DialoguePointerAddress": 22
         }
       ]
@@ -294,6 +294,10 @@
         {
           "Text": "Look For weapon",
           "DialoguePointerAddress": 23
+        },
+        {
+          "Text": "Run Away",
+          "DialoguePointerAddress": 27
         }
       ]
     },
@@ -335,7 +339,7 @@
     },
     {
       "Text": "No matter what slash you did  to the spider it just regenerates at an instant... What should you do?",
-      "DialogueType": 0,
+      "DialogueType": 1,
       "Address": 25,
       "responses":
       [
@@ -351,7 +355,7 @@
     },
     {
       "Text": "Wait... where's the arrows though? What should you do?",
-      "DialogueType": 0,
+      "DialogueType": 1,
       "Address": 26,
       "responses":
       [
@@ -372,7 +376,7 @@
       "responses":
       [
         {
-          "Text": "Enter any number to continue: ",
+          "Text": "\n",
           "DialoguePointerAddress": 28
         }
       ]
@@ -384,7 +388,7 @@
       "responses":
       [
         {
-          "Text": "Enter any number to continue: ",
+          "Text": "\n",
           "DialoguePointerAddress": 8
         }
       ]
@@ -412,7 +416,7 @@
       "responses":
       [
         {
-          "Text": "Enter any number to continue: ",
+          "Text": "\n",
           "DialoguePointerAddress": 1
         }
       ]
@@ -424,7 +428,7 @@
       "responses":
       [
         {
-          "Text": "Enter any number to continue: ",
+          "Text": "\n",
           "DialoguePointerAddress": 8
         }
       ]
@@ -436,7 +440,7 @@
       "responses":
       [
         {
-          "Text": "Enter any number to continue: ",
+          "Text": "\n",
           "DialoguePointerAddress": 33
         }
       ]
@@ -464,7 +468,7 @@
       "responses":
       [
         {
-          "Text": "Enter any number to continue: ",
+          "Text": "\n",
           "DialoguePointerAddress": 35
         }
       ]
@@ -508,7 +512,7 @@
       "responses":
       [
         {
-          "Text": "Enter any number to continue: ",
+          "Text": "\n",
           "DialoguePointerAddress": 38
         }
       ]
@@ -520,7 +524,7 @@
       "responses":
       [
         {
-          "Text": "Press enter to continue: ",
+          "Text": "\n",
           "DialoguePointerAddress": 39
         }
       ]
@@ -532,7 +536,7 @@
       "responses":
       [
         {
-          "Text": "Press enter to continue",
+          "Text": "\n",
           "DialoguePointerAddress": 0
         }
       ]
@@ -576,7 +580,7 @@
       "responses":
       [
         {
-          "Text": "Enter any number to continue: ",
+          "Text": "\n",
           "DialoguePointerAddress": 43
         }
       ]
@@ -588,7 +592,7 @@
       "responses":
       [
         {
-          "Text": "Enter any number to continue: ",
+          "Text": "\n",
           "DialoguePointerAddress": 8
         }
       ]
@@ -600,7 +604,7 @@
       "responses":
       [
         {
-          "Text": "Enter any number to continue: ",
+          "Text": "\n",
           "DialoguePointerAddress": 45
         }
       ]
@@ -612,7 +616,7 @@
       "responses":
       [
         {
-          "Text": "Enter any number to continue: ",
+          "Text": "\n",
           "DialoguePointerAddress": 46
         }
       ]
@@ -624,7 +628,7 @@
       "responses":
       [
         {
-          "Text": "Enter any number to continue: ",
+          "Text": "\n",
           "DialoguePointerAddress": 39
         }
       ]

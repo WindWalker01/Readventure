@@ -1,3 +1,9 @@
+/*
+	@Mendoza, Ruzzel P. BSCS ND1D Bataan Peninsula State University
+	
+	This class is responsible for giving a random fun fact to the user
+ */
+
 import java.util.Random;
 import java.util.Scanner;
 

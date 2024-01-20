@@ -1,3 +1,10 @@
+/*
+	@Mendoza, Ruzzel P. BSCS ND1D Bataan Peninsula State University
+	
+	This class is responsible for managing all the states that the application might have.
+	
+ */
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -10,16 +17,14 @@ public class App {
 
     public void InitTextUI() {
         System.out.println(
-                        "\t\t\t██████╗ ██████╗  █████╗ ██╗███╗   ██╗███████╗██████╗  █████╗ ██████╗ ██╗  ██╗\r\n" + //
-                        "\t\t\t██╔══██╗██╔══██╗██╔══██╗██║████╗  ██║██╔════╝██╔══██╗██╔══██╗██╔══██╗██║ ██╔╝\r\n" + //
-                        "\t\t\t██████╔╝██████╔╝███████║██║██╔██╗ ██║███████╗██████╔╝███████║██████╔╝█████╔╝ \r\n" + //
-                        "\t\t\t██╔══██╗██╔══██╗██╔══██║██║██║╚██╗██║╚════██║██╔═══╝ ██╔══██║██╔══██╗██╔═██╗ \r\n" + //
-                        "\t\t\t██████╔╝██║  ██║██║  ██║██║██║ ╚████║███████║██║     ██║  ██║██║  ██║██║  ██╗\r\n" + //
-                        "\t\t\t╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝\r\n" + //
-                        " \t\t\t                                                                            ");
-        System.out.println("\n");
-
-        System.out.println("Welcome to BrainSpark!\n");
+                        "\t\t\t██████╗ ███████╗ █████╗ ██████╗ ██╗   ██╗███████╗███╗   ██╗████████╗██╗   ██╗██████╗ ███████╗\r\n" + //
+                        "\t\t\t██╔══██╗██╔════╝██╔══██╗██╔══██╗██║   ██║██╔════╝████╗  ██║╚══██╔══╝██║   ██║██╔══██╗██╔════╝\r\n" + //
+                        "\t\t\t██████╔╝█████╗  ███████║██║  ██║██║   ██║█████╗  ██╔██╗ ██║   ██║   ██║   ██║██████╔╝█████╗  \r\n" + //
+                        "\t\t\t██╔══██╗██╔══╝  ██╔══██║██║  ██║╚██╗ ██╔╝██╔══╝  ██║╚██╗██║   ██║   ██║   ██║██╔══██╗██╔══╝  \r\n" + //
+                        "\t\t\t██║  ██║███████╗██║  ██║██████╔╝ ╚████╔╝ ███████╗██║ ╚████║   ██║   ╚██████╔╝██║  ██║███████╗\r\n" + //
+                        "\t\t\t╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝   ╚═══╝  ╚══════╝╚═╝  ╚═══╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝\r\n" + //
+                        "\t\t\t                                                                            ");
+        System.out.println("Welcome to Readventure!\n");
         System.out.println("\tWhat should we do today?");
         System.out.println("\t1. The Enchanted Forest (A Text Adventure Game).");
         System.out.println("\t2. Play hangman!");
@@ -27,13 +32,21 @@ public class App {
 
         System.out.println("\n\t4. Exit\n");
 
-        System.out.print("Enter the number: ");
+        System.out.print("Enter a number: ");
     }
+    
+    // This method is called when the application opened.
+    public void Init() {
+        System.out.println("\n\n\n\n");
+        
+        // Initialize the current state to the menu state.
+        currentState = AppState.Menu;
 
-    private void SetState() {
+        InitTextUI(); // Show the all the Text UI.
+        
         // Prompt the user for what kind of State we want to change.
         menuValue = scanner.nextInt();
-
+        
         // Change the state according to the input of the user.
         switch (menuValue) {
             case 1:
@@ -52,24 +65,16 @@ public class App {
                 System.err.println("Not Defined");
                 break;
         }
-    }
-
-    public void Init() {
-        // Initialize the current state to the menu state.
-        currentState = AppState.Menu;
-
-        InitTextUI(); // Show the all the Text UI.
-
-        SetState(); // And change the state according to the user's input
 
     }
 
+    // This method is called every frame of the application
     public void Play() {
 
+        // This block of code determines what to do relative to the state of the application
         switch (currentState) {
             case Adventure:
-                // Todo: ajsdiwiqjdmaskciwjdmqwkdniwqhjeiqwei
-                EnchantedForest adventure = new EnchantedForest(this);
+                TextAdventurePlayer adventure = new TextAdventurePlayer(this, "resources\\EnchantedForestDialogues.json");
                 adventure.Play();
                 break;
             case FunFact:
@@ -90,10 +95,18 @@ public class App {
 
     }
 
+    // This method is called when the application Exits
     public void Destroy() {
+        
+        // When the player exits then we thank the player for playing
         System.out.println("\nThank you For Playing!");
 
         scanner.close();
+    }
+    
+    
+    private void SetState() {
+    
     }
 
 }

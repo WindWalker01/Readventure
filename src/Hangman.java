@@ -1,5 +1,7 @@
 /*
- * 
+	@Mendoza, Ruzzel P. BSCS ND1D Bataan Peninsula State University
+	
+	This class is responsible for the gameplay of the hangman game
  */
 
 import java.util.ArrayList;
@@ -24,6 +26,7 @@ public class Hangman {
 
     char input;
 
+    // All the version ASCII art of the hangman
     String[] asciiString = {
             "  +---+\r\n" + //
                     "  |   |\r\n" + //
@@ -83,6 +86,7 @@ public class Hangman {
                     ""
 
     };
+    
     String[] wordBankAnimal = { "Dog", "Cat", "Pig", "Snake", "Mouse", "Spider", "Elephant", "Giraffe", "Goat", "Lion",
             "Chicken", "Fish", "Bird", "Horse", "Cow"
     };
@@ -158,19 +162,13 @@ public class Hangman {
 
             // Giving the user hints if the number of guesses is greater than three.
             if (attempts > 3) {
-                System.out.println("\n\nhint: " + hint);
+                System.err.println("\n\nHint: " + hint);
             }
-
-            try{
-
-                System.out.print("\nPick A letter: ");
-                input = scanner.next().charAt(0); // get the user response
-            }catch (InputMismatchException e){
-                System.out.println("Invalid Input");
-                input = ' ';
-                continue;
-            }
-
+            
+            
+            System.out.print("\nPick A letter: ");
+            input = scanner.next().charAt(0); // getting the user's response
+            
             // Makes the user's response and the hidden word all lowercase so that
             // no matter what casing the user inputted, it will always be the same and
             // consistent.
@@ -179,7 +177,6 @@ public class Hangman {
 
 
             // Check if the user's response is in the List of characters in the hidden word
-            // else if the response is wrong then add 1 to the attempt
             if (hiddenWord.contains(input + "")) {
 
                 //If the user's response is already in the usedLetter array
@@ -195,7 +192,8 @@ public class Hangman {
 
 
             } else {
-                System.out.println("\nWrong!");
+                // else if the response is wrong then add 1 to the attempt
+                System.err.println("\nWrong!");
                 attempts++;
             }
 
@@ -205,13 +203,14 @@ public class Hangman {
             //Checks how many correct guessed we got
             for (int i = 0; i < hiddenWord.length(); i++) {
 
-                // get the number of correct guesses relative to the number
-                // of letters in the hidden word.
+                // get the number of correct guesses relative to the number of letters in the hidden word.
                 // if the index of usedLetter[] contains the character in the hiddenWord
                 // then we add the correctGuesses variable to 1.
                 // This will loop through all the hiddenWord's character
                 // Meaning if there is a duplicate character in the hidden word it will count as two points
-                //! This is important because we are checking if the user wins by comparing the
+                
+                
+                // This is important because we are checking if the user wins by comparing the
                 // length of the hidden word to the correct guesses.
                 if (usedLetters.contains(hiddenWord.charAt(i))) {
                     correctGuesses++;
@@ -229,21 +228,21 @@ public class Hangman {
 
         }
 
-        // This checks if we did not guess the hidden word
+        // This checks if we guessed the hidden word
         if (!didWin) {
-            System.out.println(asciiString[6]);
-            System.out.println("The prisoner got hanged!");
-        } else {
             // If the number of correct guesses is the same as the number of characters in
-            // the hidden word then that means the user successfully guessed the hidden
-            // word.
+            // the hidden word then that means the user successfully guessed the hidden word.
             System.out.println("Congratulations! You guessed the word: " + hiddenWord + "!");
+            
+        } else {
+            // if the user did not guess the hidden word
+            // We will display to the user that the man got hung
+            System.out.println(asciiString[asciiString.length - 1]);
+            System.out.println("The prisoner got hanged!");
         }
 
 
-        // then we set the didWin variable to false so that when the user wants to play again
-        // it will not automatically win instantaneously.
-        didWin = false;
+        
 
         // We ask if the user wants to try again or go back to the menu screen.
         System.out.println("\n\nWant to try again?");
@@ -251,7 +250,10 @@ public class Hangman {
         System.out.println("2. No");
         System.out.print("\nEnter the number: ");
         int input = scanner.nextInt();
-
+        
+        // then we set the didWin variable to false so that when the user wants to play again
+        // it will not automatically win instantaneously.
+        didWin = false;
 
 
         if (input == 1) {
@@ -260,7 +262,7 @@ public class Hangman {
         } else if (input == 2) {
             appState.currentState = AppState.Menu;
         } else {
-            System.out.println("Invalid! Going back to the menu...");
+            System.err.println("Invalid input! Going back to the menu...");
             appState.currentState = AppState.Menu;
         }
 
