@@ -4,6 +4,7 @@
 	This class is responsible for giving a random fun fact to the user
  */
 
+import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -12,6 +13,8 @@ public class Fact {
     Scanner scanner = new Scanner(System.in);
     App state;
     Random random;
+    
+    private int response = 1;
 
     // Store all the fun facts in an array so that I can pick it in random
     String[] funFacts = {
@@ -53,19 +56,14 @@ public class Fact {
     }
 
     public void Play() {
-
-        // Give the fun fact and asks the user if he wants another more.
-        GetFunFact();
-        int response = scanner.nextInt();
-
-        // if he wants another one then the response is going to be 1. It will loop
+        
+        // if the user wants another one then the response is going to be 1. It will loop
         // until the user enters a number that is not equal to one.
         while (response == 1) {
             GetFunFact();
-            response = scanner.nextInt();
         }
 
-        state.currentState = AppState.Menu;
+        
     }
 
     private void GetFunFact() {
@@ -79,6 +77,17 @@ public class Fact {
         System.out.println("2. No (Go back to the menu screen)");
 
         System.out.print("\nEnter a number: ");
+        
+        
+        // Checks if the user did not input a number
+        try {
+            response = scanner.nextInt();
+        }catch (InputMismatchException e){
+            //If the user did not input a number then we are going to change the application state to the main menu.
+            System.err.println("Crashed: Please enter a number.");
+            System.err.println("Going back to the main menu...");
+            state.currentState = AppState.Menu;
+        }
 
     }
 }

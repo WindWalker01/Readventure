@@ -9,26 +9,24 @@ import TextAdventureUtil.*;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 /*
-Legends for Dialogue Types:
+	Legends for Dialogue Types:
        -1 - Ending dialogue
         0 - Does not have responses
         1 - The dialogue contains some responses
-
  */
-
 
 
 
 public class TextAdventurePlayer {
 	private Scanner scanner = new Scanner(System.in);
 	private App appState;
-	private int input;
 	private Dialogue currentDialogue;
 	private final List<Dialogue> dialogueList = new ArrayList<>();
 
@@ -45,6 +43,7 @@ public class TextAdventurePlayer {
 		 currentDialogue = dialogueList.get(0);
 		 
 		 while (currentDialogue.dialogueType != -1) {
+			 int input = 0;
 			 System.out.println("\n\n");
 			 
 			// Display the text of current dialogue
@@ -66,10 +65,22 @@ public class TextAdventurePlayer {
 			
 			// Get the input of the user.
 			 System.out.print("\nEnter a number to continue: ");
-			input = scanner.nextInt();
 			
-			// Decrement the input by 1 because the first element of the array list is always 0
-			input--;
+			// Checks if the user did not input a number
+			try {
+				
+				input = scanner.nextInt();
+				
+			}catch (InputMismatchException e){
+				
+				//If the user did not input a number then we are going to break out of this while loop.
+				System.err.println("Crashed: Please enter a number.");
+				System.err.println("Going back to the main menu...");
+				break;
+			}
+			 
+			 // Decrement the input by 1 because the first element of the array list is always 0
+			 input--;
 			
 			 // If the current dialogue has no responses available then we are just going to continue to the next dialogue.
 			 if (currentDialogue.dialogueType == 0) {
@@ -79,9 +90,9 @@ public class TextAdventurePlayer {
 				 continue; // Then skip the current iteration;
 			 }
 			 
-			 //Checks if the user inputs an invalid input
+			 //Checks if the user inputs an invalid number
 			 if (input < 0 || input > (currentDialogue.response.size() - 1)) {
-				 System.out.println("Invalid Input!");
+				 System.err.println("Invalid Input!");
 			 } else {
 				 // Get the appropriate dialogue according to the input of the user
 				 currentDialogue = dialogueList.get(currentDialogue.response.get(input).nextDialoguePointer - 1);
@@ -92,7 +103,7 @@ public class TextAdventurePlayer {
 		 // If the story ends then change the state of the application to the menu screen.
 		 appState.currentState = AppState.Menu;
 		
-		System.out.println("\n\n\n\n");
+		System.out.println("\n\n");
 		 
 	}
 
