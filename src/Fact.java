@@ -89,6 +89,11 @@ public class Fact {
             System.err.println("Going back to the main menu...");
             response = 0;
         }
+        
+        //Todo (I'm so stupid why did I not come up with this on day one? ◣_◢):
+        // Feature for the future: (sheeesh bars lmao)
+        // Add a way for the user to add their own fun fact
+        // Instead of having a list storing all the fun fact consider reading to a file instead.
 
     }
 }

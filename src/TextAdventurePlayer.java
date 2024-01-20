@@ -86,7 +86,7 @@ public class TextAdventurePlayer {
 			 if (currentDialogue.dialogueType == 0) {
 				 
 				 // We change the current dialogue to the address of the dialogue list
-				 currentDialogue = dialogueList.get(currentDialogue.response.get(0).nextDialoguePointer - 1);
+				 currentDialogue = dialogueList.get(currentDialogue.response.get(0).nextDialogueAddress - 1);
 				 continue; // Then skip the current iteration;
 			 }
 			 
@@ -95,7 +95,7 @@ public class TextAdventurePlayer {
 				 System.err.println("Invalid Input!");
 			 } else {
 				 // Get the appropriate dialogue according to the input of the user
-				 currentDialogue = dialogueList.get(currentDialogue.response.get(input).nextDialoguePointer - 1);
+				 currentDialogue = dialogueList.get(currentDialogue.response.get(input).nextDialogueAddress - 1);
 			 }
 
 		 }
@@ -167,4 +167,11 @@ public class TextAdventurePlayer {
 	}
 
 }
+
+
+/*
+Todo:
+ Another feature for the feature with your one and only Ruzzel Mendoza yeheeeey!
+ Consider writing a GUI for the user to create their own story for them to play!
+*/
 

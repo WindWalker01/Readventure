@@ -5,7 +5,6 @@
  */
 
 import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -20,7 +19,7 @@ public class Hangman {
     private String hiddenWord;
     private int attempts = 0; // how many attempts did the user got
 
-    private int correctGuesses = 0;
+    private int score = 0;
 
     private boolean didWin = false;
 
@@ -133,7 +132,7 @@ public class Hangman {
         // If the user is not out of attempts then continue the loop
         while (attempts < 6) {
             //Reset the number of correct guesses
-            correctGuesses = 0;
+            score = 0;
             System.out.println(asciiString[attempts]);// Prints the state of the hanged man using an array.
 
             // Prints the all the correct guesses that the user
@@ -213,7 +212,7 @@ public class Hangman {
                 // This is important because we are checking if the user wins by comparing the
                 // length of the hidden word to the correct guesses.
                 if (usedLetters.contains(hiddenWord.charAt(i))) {
-                    correctGuesses++;
+                    score++;
                 }
 
             }
@@ -221,7 +220,7 @@ public class Hangman {
             // Determine if the number of correct guesses is the same
             // as the length of the hidden word string
             // if it is then the user won, and we break out of this while loop.
-           if(correctGuesses == hiddenWord.length()){
+           if(score == hiddenWord.length()){
                didWin = true;
                 break;
            }

@@ -11,13 +11,13 @@ package TextAdventureUtil;
 public class Response {
     
     public String text;
-    public int nextDialoguePointer;
+    public int nextDialogueAddress;
     
     
     
     public Response(String _text, int _nextDialogue){
         text = _text;
-        nextDialoguePointer = _nextDialogue;
+        nextDialogueAddress = _nextDialogue;
     }
     
 }
