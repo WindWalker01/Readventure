@@ -236,6 +236,7 @@ public class Hangman {
             // We will display to the user that the man got hung
             System.out.println(asciiString[asciiString.length - 1]);
             System.out.println("The prisoner got hanged!");
+            System.out.println("The secret word is: " + hiddenWord);
         }
 
 
